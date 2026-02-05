@@ -1,0 +1,25 @@
+import socket
+import dns.resolver
+
+def audit_domain(domain):
+    print(f"\n--- Security Audit for: {domain} ---")
+    try:
+        ip = socket.gethostbyname(domain)
+        print(f"[✓] A Record: Found (IP: {ip})")
+    except:
+        print(f"[X] A Record: Not found.")
+    try:
+        mx = dns.resolver.resolve(domain, 'MX')
+        print(f"[✓] MX Records: Found {len(mx)} mail servers.")
+    except:
+        print(f"[!] MX Records: Missing!")
+    try:
+        txt = dns.resolver.resolve(domain, 'TXT')
+        spf = [r for r in txt if 'v=spf1' in r.to_text()]
+        print(f"[✓] SPF Record: Found" if spf else "[!] SPF Record: MISSING.")
+    except:
+        print(f"[!] SPF Record: Verification failed.")
+
+if __name__ == "__main__":
+    target = input("Enter domain to audit: ")
+    audit_domain(target)
