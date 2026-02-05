@@ -1,0 +1,34 @@
+Legal-Tech Infrastructure & Security Portfolio
+Professional Focus: Architecting "Digital Fortresses" for modern law firms through NIST-compliant infrastructure and Zero Trust security models.
+
+🛡️ Executive Summary
+In 2026, the sanctity of client confidentiality is a technical mandate. This repository serves as a professional showcase of infrastructure blueprints, security audits, and automation scripts tailored for the legal industry. My work bridges the gap between high-level advocacy and international cybersecurity standards.
+
+🚀 Featured Publications
+The Digital Fortress: NIST & Cloudflare for Law Firms
+
+Synopsis: A deep dive into replacing legacy VPNs with Zero Trust architecture and implementing the NIST CSF 2.0 framework in a legal environment.
+
+Published on: Webeet.io
+
+🛠️ Technical Expertise
+Infrastructure & Security
+Perimeter Defense: Implementation of Cloudflare WAF, DDoS mitigation, and edge security.
+
+Identity & Access: Transitioning firms from traditional perimeters to Zero Trust models.
+
+Domain Integrity: Hardening communication via SPF, DKIM, and DMARC to eliminate email spoofing and business email compromise (BEC).
+
+Legal Compliance Frameworks
+NIST CSF 2.0: Utilizing international standards for risk assessment and data protection.
+
+OHADA Digital Compliance: Tailoring infrastructure for regional legal standards across African jurisdictions.
+
+Data Privacy: Designing encrypted-at-rest solutions for sensitive litigation files and intellectual property.
+
+📁 Repository Roadmap
+/articles: Thought leadership and technical guides on legal-tech trends.
+
+/scripts: Python-based security auditing tools for DNS and SSL health.
+
+/blueprints: Network topology diagrams for secure, remote legal offices.
